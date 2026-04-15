@@ -1,4 +1,4 @@
-# Exclude Unity shader files
+# Exclude Unity shader files (This will remove the HLSL stat)
 *.shader linguist-vendored
 *.cginc linguist-vendored
 *.compute linguist-vendored
@@ -13,5 +13,5 @@
 *.m linguist-vendored
 *.mm linguist-vendored
 
-# Ignore third-party plugins
+# Ignore third-party plugins entirely
 Assets/Plugins/** linguist-vendored
