@@ -1,9 +1,17 @@
-# Ignore Unity-specific files in language statistics
-*.mat linguist-vendored
+# Exclude Unity shader files
 *.shader linguist-vendored
-*.hlsl linguist-vendored
 *.cginc linguist-vendored
-*.m linguist-vendored
+*.compute linguist-vendored
 
-# Tell git to properly handle line endings
-* text=auto
+# Exclude Unity generated files
+*.mat linguist-generated
+*.prefab linguist-generated
+*.asset linguist-generated
+*.unity linguist-generated
+
+# Fix the Wolfram Language bug (Ignore iOS plugins)
+*.m linguist-vendored
+*.mm linguist-vendored
+
+# Ignore third-party plugins
+Assets/Plugins/** linguist-vendored
